@@ -1,0 +1,163 @@
+.lu-aside {
+  width: 280px;
+  position: relative;
+  transform: translate3d(-226px, 0, 0);
+  transition: transform 0.2s;
+  .menu-active & {
+    transform: translate3d(0, 0, 0);
+  }
+  .login & {
+    display: none;
+  }
+  &__control {
+    right: 0;
+    position: absolute;
+    top: 10px;
+  }
+  &__menu {
+    margin: 0;
+    height: 100vh;
+    background: #006883;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0 0 0;
+    justify-content: flex-start;
+    &-item {
+      padding: 35px 0;
+      position: relative;
+      text-transform: uppercase;
+      min-width: 170px;
+      width: 100%;
+      &:hover,
+      &:active,
+      &:focus {
+        background: #00BADB;
+        color: $primary-color;
+        text-decoration: none;
+      }
+    }
+    &-active {
+      background: #00BADB;
+    }
+  }
+  &__menu-anchor {
+    color: $color-white;
+    text-decoration: none;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+  &__toggle-menu {
+    background: transparent;
+    border: 0;
+    margin: 10px 5px;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    z-index: 20;
+    display: block;
+    .visual-aid {
+      opacity: 1;
+    }
+    &::after,
+    &::before {
+      content: '';
+      margin: 5px 0;
+    }
+    .visual-aid,
+    &::after,
+    &::before {
+      width: 30px;
+      height: 3px;
+      display: block;
+      background: #000000;
+      transition: all .2s ease-in-out;
+    }
+    .accessible-text {
+      @include visually-hidden;
+    }
+    .active & {
+      .visual-aid {
+        opacity: 0;
+      }
+      &::after {
+        transform: rotate(-45deg) translate3d(6px, -5.5px, 0);
+      }
+      &::before {
+        transform: rotate(45deg) translate3d(6px, 5.5px, 0);
+      }
+    }
+  }
+  &__image-container {
+    width: 150px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+  &__menu-image-container {
+    padding-top: 25px;
+    width: 125px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__menu-image {
+    img {
+      width: 28px;
+      height: 28px;
+      position: absolute;
+      right: -41px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    svg {
+      width: 28px;
+      height: 28px;
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+// This is the top header
+.lu-header {
+  background: $color-white;
+  width: 100%;
+  position: fixed;
+  height: 60px;
+  border-bottom: 1px solid $color-grey;
+  top: 0;
+  z-index: 10;
+  display: block;
+  .login & {
+    display: none;
+  }
+  &__menu-link {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 75px;
+    color: $color-grey-dark;
+    text-decoration: none;
+    &:hover,
+    &:active,
+    &:focus {
+      color: $secondary-color;
+    }
+  }
+  &__image-container {
+    width: 150px;
+    position: absolute;
+    left: calc(50%);
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+}

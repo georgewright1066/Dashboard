@@ -1,0 +1,20 @@
+.files {
+display: flex;
+flex-direction: column;
+justify-content: center;
+position: fixed;
+z-index: 100;
+background: #3f3f3f;
+width: 75%;
+left: calc(27px + 50%);
+top: 50%;
+-webkit-transform: translate3d(-50%, -50%, 0);
+transform: translate3d(-50%, -50%, 0);
+max-width: 400px;
+padding: 47px 10px 10px 10px;
+border-radius: 8px;
+display: none;
+    &.active {
+        display: block
+    }
+}

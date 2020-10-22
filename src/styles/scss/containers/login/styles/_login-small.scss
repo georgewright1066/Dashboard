@@ -1,0 +1,64 @@
+.login {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &__image-container {
+    padding-top: $form-margin-top;
+    width: 80%;
+    max-width: 250px;
+    img {
+      width: 100%;
+    }
+  }
+  &__form {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 7px;
+    background: $color-white;
+    padding: $form-padding;
+    @include BoxShadowHelper(1);
+
+    textarea {
+      @include BoxShadowHelper(1)
+    }
+    label {
+      margin: 15px 0;
+      font-size: 14px;
+      font-weight: bold;
+      display: block;
+    }
+    button {
+      width: 100%;
+      margin-bottom: 0;
+      padding: 14px;
+      margin-top: 30px;
+    }
+  }
+  &__group {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.forgot {
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.text-area {
+  width: 100%;
+  height: 200px;
+  padding: 5px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+
+.info-red {
+  margin-top: 20px;
+  color: white;
+  background: $error-red;
+  padding: 5px 30px;
+  border-radius: 5px;
+}

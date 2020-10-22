@@ -1,0 +1,105 @@
+{
+  "264": {
+    "id": 264,
+    "taskIds": [
+      {
+        "step_order_id": 3109,
+        "step_excludes": 0,
+        "report_type": 3,
+        "step_id": 554,
+        "step_completes": 0,
+        "step_data_available": 0,
+        "step_final_user_count": 0,
+        "primary_step": false,
+        "step_details": "Dec18 JS ViewPoints - Pre-exposure Bill / Statement",
+        "step_type": "Instruction Step",
+        "step_order": 0
+      },
+      {
+        "step_order_id": 3110,
+        "step_excludes": 0,
+        "report_type": 3,
+        "step_id": 580,
+        "step_completes": 0,
+        "step_data_available": 0,
+        "step_final_user_count": 0,
+        "primary_step": false,
+        "step_details": "http://www.example.com",
+        "step_type": "External Step",
+        "step_order": 1
+      },
+      {
+        "step_order_id": 3084,
+        "step_excludes": 0,
+        "report_type": 3,
+        "step_id": 554,
+        "step_completes": 0,
+        "step_data_available": 0,
+        "step_final_user_count": 0,
+        "primary_step": false,
+        "step_details": "Dec18 JS ViewPoints - Pre-exposure Bill / Statement",
+        "step_type": "Instruction Step",
+        "step_order": 2
+      }
+    ],
+    "cellName": "cell_2-TestStepManagement"
+  },
+  "362": {
+    "id": 362,
+    "taskIds": [
+      {
+        "step_order_id": 3147,
+        "step_excludes": 0,
+        "report_type": 3,
+        "step_id": 32,
+        "step_completes": 0,
+        "step_data_available": 0,
+        "step_final_user_count": 0,
+        "primary_step": false,
+        "step_details": "CTT Elevator Calibration Page",
+        "step_type": "Validation Step",
+        "step_order": 0
+      },
+      {
+        "step_order_id": 3148,
+        "step_excludes": 0,
+        "report_type": 3,
+        "step_id": 32,
+        "step_completes": 0,
+        "step_data_available": 0,
+        "step_final_user_count": 0,
+        "primary_step": false,
+        "step_details": "CTT Elevator Calibration Page",
+        "step_type": "Validation Step",
+        "step_order": 1
+      },
+      {
+        "step_order_id": 3126,
+        "step_excludes": 0,
+        "report_type": 3,
+        "step_id": 586,
+        "step_completes": 0,
+        "step_data_available": 0,
+        "step_final_user_count": 0,
+        "primary_step": false,
+        "step_details": "http://www.google.com",
+        "step_type": "External Step",
+        "step_order": 2
+      },
+      {
+        "step_order_id": 3143,
+        "step_excludes": 0,
+        "report_type": 3,
+        "step_id": 554,
+        "step_completes": 0,
+        "step_data_available": 0,
+        "step_final_user_count": 0,
+        "primary_step": false,
+        "step_details": "Dec18 JS ViewPoints - Pre-exposure Bill / Statement",
+        "step_type": "Instruction Step",
+        "step_order": 3
+      }
+    ],
+    "cellName": "hasnasdasd"
+  }
+}

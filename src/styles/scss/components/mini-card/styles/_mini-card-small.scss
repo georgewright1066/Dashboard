@@ -1,0 +1,30 @@
+.mini-card {
+  position: relative;
+  margin-right: 10px;
+
+  &__container {
+    padding: 10px 10px;
+    background: #00BADB;
+    text-align: center;
+    @include BoxShadowHelper(1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__value {
+    font-size: 45px;
+    margin: 0;
+  }
+
+  &__suffix {
+    font-size: 40px;
+  }
+
+  &__psuedo {
+    font-size: 16px;
+    text-decoration: none;
+  }
+}

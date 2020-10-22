@@ -1,0 +1,11 @@
+.survey {
+  @include white-border;
+
+  &__list {
+    cursor: pointer;
+  }
+
+  &__list-item {
+    padding: 10px 0;
+  }
+}

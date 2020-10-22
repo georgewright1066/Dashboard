@@ -1,0 +1,54 @@
+@include breakpoint(largeDisplay) {
+  .csm {
+
+    &-modal-form {
+      .pretty-dropdown {
+       &.large {
+        width: 680px;
+        position: absolute;
+        left: -370px;
+        max-width: 680px;
+       }
+       &:after {
+        //  right:200px;
+       }
+      }
+      &__dropdown-container {
+        flex-direction: row;
+        justify-content: space-between;
+
+        &.top {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    &-modal-form-edit-delete {
+      height: 50%;
+      &.full-height {
+        height: 96%;
+      
+      }
+      &.active {
+        flex-direction: row;
+
+      }
+
+      &__confirm {
+        &.active {
+          margin-top: 0;
+        }
+      }
+
+      &__content-wrapper {
+      }
+  }
+  }
+  .edit-box__container {
+    margin: 0;
+    &.active {
+      padding: 10px 70px;
+      background: #ebebeb;
+    }
+  }
+}

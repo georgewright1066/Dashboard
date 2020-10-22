@@ -1,0 +1,59 @@
+.stims {
+
+    &__image {
+        display: none;
+        max-width: 300px;
+        max-height: 300px;
+
+        &.tall {
+            max-width: 100px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+        &.active {
+            display: block;
+        }
+        &--preview {
+            cursor: pointer;
+        }
+
+        &--heading {
+            margin:0; 
+            display: none;
+            &.active {
+                display: block;
+            }
+        }
+    }
+
+    &__filter-container {
+        @include white-border;
+
+        .pretty-dropdown{
+            &__container {
+                margin-top: 10px;
+                padding-left: 0;
+         }
+        }
+    }
+
+}
+
+
+//  making table rows les big
+.table {
+    &.study {
+        &.cache-page {
+            td {
+                max-width: 300px;
+            };
+        }
+    }
+}
+
+.centered {
+text-align: center;
+}

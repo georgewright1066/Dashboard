@@ -1,0 +1,48 @@
+.my-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    max-width: 500px;
+    background: #ebebeb;
+    border: 3px solid #BFBFBF;
+    margin-top: $form-margin-top;
+    margin-bottom: $form-margin-top;
+    width: 80%;
+    padding: $form-padding;
+    @include BoxShadowHelper(1);
+
+  }
+
+  label {
+    padding: 10px 0;
+  }
+
+  &__button {
+    margin: 15px 0;
+    padding: 10px;
+    max-width: 170px;
+  }
+
+  &__heading-main {
+    text-align: center;
+  }
+
+  &__current-details-container {
+    background: $color-white;
+    border-radius: $border-radius;
+    margin-top: $form-margin-top;
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+    margin-bottom: $form-margin-top;
+    @include BoxShadowHelper(1);
+
+
+
+  }
+}

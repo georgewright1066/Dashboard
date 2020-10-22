@@ -1,0 +1,180 @@
+.csm {
+  display: flex;
+  flex-direction: column;
+
+  &__button-add {
+    background: transparent;
+    border: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    &:after {
+      content: '';
+      display: block;
+      width: 15px;
+      height: 15px;
+      background-image: url('../../assets/images/add.svg');
+      background-size: contain;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      background-repeat: no-repeat;
+      position: absolute;
+    }
+
+    &.small {
+      min-height: 66px;
+      &:after {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+
+  &__title {
+    background: #00BADB;
+    margin: 0px;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+    text-align: center;
+  }
+
+  &__sub-title {
+    background: #BFBFBF;
+    margin: 0px;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+    text-align: center;
+  }
+
+  &__title-input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+    font-size: 1.4em;
+    margin-top: 0;
+
+    &.subtitle {
+      font-size: 16px;
+    }
+  }
+
+  &__button-delete {
+    color: $color-white;
+    border-color: $color-white;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 34px;
+      height: 60px;
+      background-image: url('../../assets/images/rubbish-bin.svg');
+      background-size: contain;
+      top: 0px;
+      left: 20px;
+      position: relative;
+      transform: translateX(-50%);
+      background-repeat: no-repeat;
+    }
+    &.edit {
+      &:before {
+        background-image: url('../../assets/images/edit.svg');
+  
+      }
+    }
+
+    &.copy {
+      &:before {
+        width: 24px;
+        height: 20px;
+        background-image: url('../../assets/images/copy-document.svg');
+  
+      }
+    }
+ 
+  }
+
+
+  &__button-edit {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+  }
+
+  &__add-cell-form {
+    background: #fff;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    display: none;
+    &.active {
+      display: block;
+    }
+
+    &--button-container {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-top:20px;
+    } 
+  }
+
+  &__task-container {
+    padding: 6px;
+    position:relative;
+    margin: 6px 10px;
+    box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.12), 0 1px 4px 1px rgba(0, 0, 0, 0.24);
+
+    &--name {
+      display: block;
+      &.active {
+        display: none;
+      }
+    }
+
+    &--names {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+
+  &__task-list {
+    border: 2px solid #bfbfbf;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 100%;
+  }
+
+  &__add-step-container {
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+
+  &__input-step {
+    margin: 10px;
+  }
+}

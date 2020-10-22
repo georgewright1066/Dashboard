@@ -1,0 +1,117 @@
+#pointer-first-home {
+  position: relative;
+  background: #bfbfbf;
+  line-height: 40px;
+  padding: 10.5px;
+  margin-right: 5px;
+  margin-left: 230px;
+}
+#pointer-first-home:before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid #bfbfbf;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  z-index: 9;
+}
+#pointer-first-home > a {
+  text-decoration: none;
+}
+
+
+#pointer-first {
+  position: relative;
+  background: #bfbfbf;
+  line-height: 40px;
+  padding: 10.5px;
+  margin-right: 5px;
+}
+#pointer-first:before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid #bfbfbf;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  z-index: 9;
+}
+#pointer-first > a {
+  text-decoration: none;
+}
+
+#pointer-grey {
+  position: relative;
+  background: #bfbfbf;
+  line-height: 40px;
+  padding: 10.5px;
+  margin-right: 5px;
+  padding-left: 30px;
+}
+#pointer-grey:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+#pointer-grey:before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid #bfbfbf;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  z-index: 9;
+}
+#pointer-grey > a {
+  text-decoration: none;
+}
+
+#pointer-blue {
+  position: relative;
+  background: #00BADB;
+  line-height: 40px;
+  padding: 10.5px;
+  margin-right: 5px;
+  padding-left: 30px;
+}
+#pointer-blue:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+#pointer-blue:before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid #00BADB;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  z-index: 9;
+}
+#pointer-blue > a {
+  text-decoration: none;
+}

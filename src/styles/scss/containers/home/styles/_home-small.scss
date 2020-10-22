@@ -1,0 +1,47 @@
+.home {
+  &__main-box {
+    display: flex;
+    margin-left: 236px;
+  }
+
+  &__text-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__sub-box {
+    flex: 1;
+    text-align: -webkit-center;
+  }
+
+  &__img {
+    margin: 20px;
+    width: 300px;
+  }
+
+  &__stats-container {
+    margin: 20px;
+    background: #7FFA31;
+    width: 420px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  &__stats-font {
+    font-size: 40px;
+    font-weight: 300;
+    align-self: center;
+    margin: 10px;
+  }
+
+  &__small-gap {
+    margin-left: 8px;
+    margin-top: 18px;
+  }
+
+  &__button {
+    padding: 20px;
+  }
+}

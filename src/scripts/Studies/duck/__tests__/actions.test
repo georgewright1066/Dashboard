@@ -1,0 +1,202 @@
+import Adapter from 'enzyme-adapter-react-16';
+import { studiesOperations } from '../index';
+import thunk from 'redux-thunk';
+import DataService from '../../../common/services/dataService';
+import configureMockStore from 'redux-mock-store';
+const middlewares = [thunk];
+const otherMockStore = configureMockStore(middlewares);
+import { configure } from 'enzyme';
+import types from '../types';
+import isolationData from '../reducers';
+
+
+configure({ adapter: new Adapter() });
+
+
+describe('CHECKS ALL IN STEP', () => {
+
+  it('fetches data correctly then dispatches the correct actions', async () => {
+
+    const initialState = {
+      isolationData: {
+        "data": {
+          "study_id": 249,
+          "live": false,
+          "completed": true,
+          "study_name": "Xofluza Study 2 South Korea",
+          "data": [
+            {
+              "cell_id": 627,
+              "step_list": [
+                {
+                  "cachepage_id": -1,
+                  "step_final_user_count": 5,
+                  "step_order": 1,
+                  "cachepage_url": "",
+                  "stimulus_list": [
+                    {
+                      "stimulus_width": 8000,
+                      "stimulus_name": "Xofluza_sk_ad1",
+                      "panelist_viewed_percent": 100,
+                      "stimulus_source": "https://s3.eu-west-2.amazonaws.com/ctt-media/resized/1259-resized.jpg",
+                      "panelist_viewable_percent": 0,
+                      "stimulus_id": 1259,
+                      "stimulus_height": 4500,
+                      "stimulus_type": "image",
+                      "stimulus_source_alternate": "",
+                      "avg_stim_dwell_time": 19.494,
+                      "stimulus_source_high_quality": "https://content.viewpoints.fyi/uploader/1259.jpg"
+                    }
+                  ],
+                  "cachepage_name": "",
+                  "step_id": 1300
+                },
+                {
+                  "cachepage_id": -1,
+                  "step_final_user_count": 5,
+                  "step_order": 2,
+                  "cachepage_url": "",
+                  "stimulus_list": [
+                    {
+                      "stimulus_width": 8001,
+                      "stimulus_name": "Xofluza_sk_ad2",
+                      "panelist_viewed_percent": 100,
+                      "stimulus_source": "https://s3.eu-west-2.amazonaws.com/ctt-media/resized/1260-resized.jpg",
+                      "panelist_viewable_percent": 0,
+                      "stimulus_id": 1260,
+                      "stimulus_height": 4500,
+                      "stimulus_type": "image",
+                      "stimulus_source_alternate": "",
+                      "avg_stim_dwell_time": 12.036,
+                      "stimulus_source_high_quality": "https://content.viewpoints.fyi/uploader/1260.jpg"
+                    }
+                  ],
+                  "cachepage_name": "",
+                  "step_id": 1301
+                },
+                {
+                  "cachepage_id": -1,
+                  "step_final_user_count": 5,
+                  "step_order": 4,
+                  "cachepage_url": "",
+                  "stimulus_list": [
+                    {
+                      "stimulus_width": 8001,
+                      "stimulus_name": "Xofluza_sk_ad4",
+                      "panelist_viewed_percent": 100,
+                      "stimulus_source": "https://s3.eu-west-2.amazonaws.com/ctt-media/resized/1262-resized.jpg",
+                      "panelist_viewable_percent": 0,
+                      "stimulus_id": 1262,
+                      "stimulus_height": 4500,
+                      "stimulus_type": "image",
+                      "stimulus_source_alternate": "",
+                      "avg_stim_dwell_time": 5.136,
+                      "stimulus_source_high_quality": "https://content.viewpoints.fyi/uploader/1262.jpg"
+                    }
+                  ],
+                  "cachepage_name": "",
+                  "step_id": 1303
+                },
+                {
+                  "cachepage_id": -1,
+                  "step_final_user_count": 5,
+                  "step_order": 5,
+                  "cachepage_url": "",
+                  "stimulus_list": [
+                    {
+                      "stimulus_width": 5100,
+                      "stimulus_name": "Xofluza_sk_ad5",
+                      "panelist_viewed_percent": 100,
+                      "stimulus_source": "https://s3.eu-west-2.amazonaws.com/ctt-media/resized/1263-resized.jpg",
+                      "panelist_viewable_percent": 0,
+                      "stimulus_id": 1263,
+                      "stimulus_height": 3300,
+                      "stimulus_type": "image",
+                      "stimulus_source_alternate": "",
+                      "avg_stim_dwell_time": 10.608,
+                      "stimulus_source_high_quality": "https://content.viewpoints.fyi/uploader/1263.jpg"
+                    }
+                  ],
+                  "cachepage_name": "",
+                  "step_id": 1304
+                }
+              ],
+              "cell_name": "Xofluza_sk_cella"
+            }
+          ]
+        },
+        "whichStudiesAreChecked": [],
+        "loading": false,
+        "checked": false,
+        "studiesOverview": {
+          "status": "Completed",
+          "environment_id": 2,
+          "media_id": 11,
+          "survey_overview": {
+            "has_demographics": false,
+            "num_questions": 0,
+            "has_survey": false
+          },
+          "media": "Concept",
+          "completed": true,
+          "methodology": "Infra-red cameras and concept flash testing",
+          "study_name": "Xofluza Study 2 South Korea",
+          "data_collection_end": null,
+          "brief": "Overseas study, infra-red cameras, in South Korea",
+          "environment": "Lab",
+          "study_id": 249,
+          "live": false,
+          "data_collection_start": null,
+          "audience_overview": {
+            "panels": [],
+            "participants_requested": 100
+          },
+          "report_overview": {},
+          "cell_step_stim_overview": {
+            "stim_count": 4,
+            "participant_final_count": 5,
+            "participant_excludes": 7,
+            "participants_returned": 20,
+            "cell_count": 1,
+            "participant_completes": 11,
+            "participants_requested": 100,
+            "allow_step_editing": false
+          }
+        },
+        "studiesOverviewLoading": false,
+        "error": null
+      }
+    }
+
+
+    const store = otherMockStore({ ...initialState });
+
+    const stimsInStep = jest.fn(() => [
+      {
+        "stimulus_width": 8000,
+        "stimulus_name": "Xofluza_sk_ad1",
+        "panelist_viewed_percent": 100,
+        "stimulus_source": "https://s3.eu-west-2.amazonaws.com/ctt-media/resized/1259-resized.jpg",
+        "panelist_viewable_percent": 0,
+        "stimulus_id": 1259,
+        "stimulus_height": 4500,
+        "stimulus_type": "image",
+        "stimulus_source_alternate": "",
+        "avg_stim_dwell_time": 19.494,
+        "stimulus_source_high_quality": "https://content.viewpoints.fyi/uploader/1259.jpg"
+      }
+    ])
+
+    return store.dispatch(studiesOperations.checkAllinStep(0, "249", 627, { history: "PUSH" }))
+      .then(() => {
+        expect(store.getActions()).toEqual([
+
+
+
+        ])
+      });
+  });
+})
+
+
+

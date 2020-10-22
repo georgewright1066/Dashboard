@@ -1,0 +1,29 @@
+@include breakpoint(largeDisplay) {
+  .dashboard {
+    &__container {
+      background-color: white;
+      position: absolute;
+      top: 60px;
+      right: 0;
+    }
+
+    &__filter-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      &--item {
+        &--checkbox {
+          margin-left: 35px;
+        }
+      }
+    }
+
+    label {
+      padding-left: 10px;
+      text-align: center;
+      display: block;
+    }
+  }
+}

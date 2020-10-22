@@ -1,0 +1,23 @@
+.study-details {
+  background: #e4e4e4;
+  @include BoxShadowHelper(1);
+  &__name-container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__label {
+    font-weight: bold;
+    min-width: 115px;
+  }
+  &__value {
+    padding: 10px;
+  }
+}
+
+.study-image {
+  &__container {
+    justify-content: center;
+    padding: 10px;
+    @include BoxShadowHelper(1);
+  }
+}

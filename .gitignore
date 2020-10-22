@@ -1,0 +1,9 @@
+node_modules
+.sass-cache
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/modules.xml
+.idea/misc.xml
+.idea/lumen-dashboard.iml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/.rnconsole

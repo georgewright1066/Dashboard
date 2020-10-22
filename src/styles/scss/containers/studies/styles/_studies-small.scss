@@ -1,0 +1,7 @@
+.studies {
+
+  &__button-container {
+    @include white-border;
+    margin-bottom: 10px;
+  }
+}

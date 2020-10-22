@@ -1,0 +1,6 @@
+@include breakpoint(midDisplay) {
+  .card {
+    // width: 30%;
+    max-width: 200px;
+  }
+}

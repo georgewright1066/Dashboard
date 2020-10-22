@@ -1,0 +1,14 @@
+@include breakpoint(midDisplay) {
+  .demographics {
+
+    &__downloads-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__graph-container {
+      width: 48%;
+    }
+  }
+
+}

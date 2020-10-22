@@ -1,0 +1,6 @@
+@include breakpoint(largeDisplay) {
+    .csm {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}

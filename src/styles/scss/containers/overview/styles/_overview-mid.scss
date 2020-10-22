@@ -1,0 +1,11 @@
+@include breakpoint(largeDisplay) {
+  .overview {
+
+    &__widget-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+  }
+
+}

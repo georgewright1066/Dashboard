@@ -1,0 +1,74 @@
+.dashboard {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding: $padding-container-size;
+  }
+
+  &__table-container {
+    display: flex;
+  }
+
+  &__filter-container {
+    background: $color-white;
+    border-bottom: 1px solid #e7e7e7;
+
+    &--item {
+      @include BoxShadowHelper(1);
+      margin: 10px;
+      background: #BFBFBF;
+      display: flex;
+      align-items: center;
+      position: relative;
+      flex: 1;
+      justify-content: center;
+
+      &--search {
+        margin: 10px;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+      }
+    }
+
+    label {
+      text-align: center;
+    }
+  }
+
+  &__card-container {
+    @include white-border;
+    margin-bottom: 10px;
+  }
+
+  &__image-container {
+    @include white-border;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    img {
+      width: 80%;
+      height: 100%;
+    }
+  }
+
+  &__add-study-button {
+    height: 100%;
+    width: 100%;
+    color: black;
+    border-radius: 0px;
+    background-color: #00BADB;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+}
+
+.dashboard__filter-container--item--checkbox {
+  margin-left: 35px;
+}

@@ -1,0 +1,52 @@
+.info-tooltip {
+  width:20px;
+  height: 20px;
+  display: block;
+  background: url('../../assets/images/information.svg');
+  position: absolute;
+  cursor: pointer;
+  right: 15px;
+  top: 15px;
+
+  &__inner {
+    display: none;
+    &.active {
+      display: block;
+      position: relative;
+      left: 6px;
+    }
+  }
+
+  &__inner-content-container {
+    position: relative;
+    z-index: 10;
+    &.active {
+      display: block;
+      top: 30px;
+      position: absolute;
+    }
+  }
+
+  &__inner-copy {
+    display: block;
+    background: $color-grey-dark;
+    color: $color-white;
+    padding: 4px;
+    position: relative;
+    margin-bottom: 4px;
+    position: absolute;
+    font-size:12px;
+    top: 30px;
+    right:0;
+    min-width:80px;
+    &::before {
+      content: '';
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      position: absolute;
+      right: 8px;
+      top: -10px;
+      border-bottom: 11px solid $color-grey-dark;
+    }
+  }
+}

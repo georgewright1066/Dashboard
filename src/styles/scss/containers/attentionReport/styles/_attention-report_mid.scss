@@ -1,0 +1,12 @@
+@include breakpoint(largeDisplay) {
+  .attention-report {
+    display: flex;
+    flex-flow: wrap;
+
+    &__graph-container {
+      width: 48%;
+      text-align: center;
+      margin: 10px auto;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+@include breakpoint(largeDisplay) {
+  .my-details {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+}

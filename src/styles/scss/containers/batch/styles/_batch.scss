@@ -1,0 +1,62 @@
+.batch {
+  &-overview {
+    display: flex;
+    justify-content: center;
+  }
+  &-kpi {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    &__image-card-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .kpi__image-container {
+      max-width: 300px;
+      margin-top: 60px;
+
+    }
+
+    .pretty-dropdown__container {
+      top: 10px;
+    }
+
+    table.study {
+      margin-top: 60px;
+    }
+  }
+}
+
+.stims {
+
+  &.table {
+    margin: 0;
+  }
+}
+
+@include breakpoint(largeDisplay) {
+
+  .batch {
+    &-kpi {
+      &__image-card-container {
+        flex-direction: row;
+      }
+    }
+  }
+
+  .stims {}
+}
+
+
+.batch-report {
+  padding-top: 20px;
+  margin: 10px;
+
+  .table {
+    &.study {
+      margin: 0;
+    }
+  }
+}

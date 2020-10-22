@@ -1,0 +1,12 @@
+{
+  "data": {
+      "id": 1,
+      "first_name": "User",
+      "last_name": "One",
+      "user_name": "UserOne@something.com",
+      "email": "UserOne@something.com",
+      "job_title": "",
+      "location": "",
+      "phone_number": ""
+  }
+}

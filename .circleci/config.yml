@@ -1,0 +1,109 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2
+jobs:
+  build-job:
+    #working_directory: ~/lumen-dashboard
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:11.4.0
+
+      # Specify service dependencies here if necessary
+      # CircleCI maintains a library of pre-built images
+      # documented at https://circleci.com/docs/2.0/circleci-images/
+      # - image: circleci/mongo:3.4.4
+    steps:
+      - checkout
+
+      - run:
+          name: Install global dependencies
+          command: |
+            sudo npm install --global webpack webpack-cli yarn
+            sudo apt-get update && sudo apt-get install -y python-pip libpython-dev
+            sudo pip install awscli --upgrade
+            sudo pip install awsebcli --upgrade
+
+      - restore_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+
+      # run Install
+      - run:
+          name: npm-install
+          command: npm install
+
+      - save_cache:
+          key: dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+
+      # run Test
+      - run:
+          name: npm-test
+          command: npm run test
+
+      - run:
+          name: Get Environment File (starts as dev - so only replace if this is live)
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "release" ]; then
+              aws s3 cp s3://lumenresearch-build-configs/environments/dashboard.env .env
+            fi
+
+      - run:
+          name: npm-build
+          command: npm run build
+
+      - run:
+          name: filesystem view
+          command: ls -las /home/circleci/project/build
+
+      - persist_to_workspace:
+          root: /home/circleci
+          paths: project/build/*
+
+  deploy-job:
+    docker:
+      - image: cibuilds/aws:1.16.1
+
+    steps:
+      - checkout
+
+      - attach_workspace:
+          at: /root
+
+      - run:
+          name: Deploy to S3 if tests pass
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "release" ]; then
+              aws s3 sync ~/project/build s3://dashboard.lumen-research.com-static/ --delete --acl public-read
+            else
+              aws s3 sync ~/project/build s3://dashboard.dev.lumen-research.com-static/ --delete --acl public-read
+            fi
+            if [ "${CIRCLE_BRANCH}" == "release" ]; then
+              curl https://api.rollbar.com/api/1/deploy/ \
+                -F access_token=$ROLLBAR_TOKEN \
+                -F environment=release \
+                -F revision=`git log -n 1 --pretty=format:"%H"` \
+                -F local_username=circleci
+            else
+              curl https://api.rollbar.com/api/1/deploy/ \
+                -F access_token=$ROLLBAR_TOKEN \
+                -F environment=development \
+                -F revision=`git log -n 1 --pretty=format:"%H"` \
+                -F local_username=circleci
+            fi
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - build-job
+      - deploy-job:
+          requires:
+              - build-job
+          filters:
+            branches:
+              only:
+                - release
+                - development

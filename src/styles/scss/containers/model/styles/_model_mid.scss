@@ -1,0 +1,5 @@
+@include breakpoint(largeDisplay) {
+  .lu-model {
+    position: fixed;
+  }
+}

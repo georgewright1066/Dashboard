@@ -1,0 +1,78 @@
+{
+  "data": [{
+      "id": 8,
+      "description": "18-",
+      "order": 0,
+      "include_in_question": true
+    },
+    {
+      "id": 7,
+      "description": "75+",
+      "order": 7,
+      "include_in_question": true
+    },
+    {
+      "id": 6,
+      "description": "65-74",
+      "order": 6,
+      "include_in_question": true
+    },
+    {
+      "id": 5,
+      "description": "55-64",
+      "order": 5,
+      "include_in_question": true
+    },
+    {
+      "id": 4,
+      "description": "45-54",
+      "order": 4,
+      "include_in_question": true
+    },
+    {
+      "id": 3,
+      "description": "35-44",
+      "order": 3,
+      "include_in_question": true
+    },
+    {
+      "id": 2,
+      "description": "25-34",
+      "order": 2,
+      "include_in_question": true
+    },
+    {
+      "id": 1,
+      "description": "18-24",
+      "order": 1,
+      "include_in_question": true
+    },
+    {
+      "id": 9,
+      "description": "Prefer not to say",
+      "order": 9,
+      "include_in_question": false
+    }
+  ],
+  "status": 200,
+  "statusText": "OK",
+  "headers": {
+    "content-language": "en",
+    "content-type": "application/json"
+  },
+  "config": {
+    "transformRequest": {},
+    "transformResponse": {},
+    "timeout": 0,
+    "xsrfCookieName": "XSRF-TOKEN",
+    "xsrfHeaderName": "X-XSRF-TOKEN",
+    "maxContentLength": -1,
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "authorization": "token 355540091f4202e5ec8af14a1749c1ac60d4c30d"
+    },
+    "method": "get",
+    "url": "https://api.lumen-research.com/v1.0/dashboard/data/demographics/age_list"
+  },
+  "request": {}
+}

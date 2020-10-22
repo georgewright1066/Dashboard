@@ -1,0 +1,7 @@
+@include breakpoint(largeDisplay) {
+  .filter {
+    &__table {
+      flex-direction: row;
+    }
+  }
+}

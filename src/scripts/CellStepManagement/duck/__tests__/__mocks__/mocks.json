@@ -1,0 +1,136 @@
+{
+  "data": {
+    "cell_count": 96,
+    "study_name": "Test Step Management",
+    "study_id": 138,
+    "live": true,
+    "data": [
+      {
+        "cell_id": 264,
+        "step_data": [
+          {
+            "step_order_id": 3109,
+            "step_excludes": 0,
+            "report_type": 3,
+            "step_id": 554,
+            "step_completes": 0,
+            "step_data_available": 0,
+            "step_final_user_count": 0,
+            "primary_step": false,
+            "step_details": "Dec18 JS ViewPoints - Pre-exposure Bill / Statement",
+            "step_type": "Instruction Step",
+            "step_order": 0
+          },
+          {
+            "step_order_id": 3110,
+            "step_excludes": 0,
+            "report_type": 3,
+            "step_id": 580,
+            "step_completes": 0,
+            "step_data_available": 0,
+            "step_final_user_count": 0,
+            "primary_step": false,
+            "step_details": "http://www.example.com",
+            "step_type": "External Step",
+            "step_order": 1
+          },
+          {
+            "step_order_id": 3084,
+            "step_excludes": 0,
+            "report_type": 3,
+            "step_id": 554,
+            "step_completes": 0,
+            "step_data_available": 0,
+            "step_final_user_count": 0,
+            "primary_step": false,
+            "step_details": "Dec18 JS ViewPoints - Pre-exposure Bill / Statement",
+            "step_type": "Instruction Step",
+            "step_order": 2
+          }
+        ],
+        "cell_name": "cell_2-TestStepManagement"
+      },
+      {
+        "cell_id": 362,
+        "step_data": [
+          {
+            "step_order_id": 3147,
+            "step_excludes": 0,
+            "report_type": 3,
+            "step_id": 32,
+            "step_completes": 0,
+            "step_data_available": 0,
+            "step_final_user_count": 0,
+            "primary_step": false,
+            "step_details": "CTT Elevator Calibration Page",
+            "step_type": "Validation Step",
+            "step_order": 0
+          },
+          {
+            "step_order_id": 3148,
+            "step_excludes": 0,
+            "report_type": 3,
+            "step_id": 32,
+            "step_completes": 0,
+            "step_data_available": 0,
+            "step_final_user_count": 0,
+            "primary_step": false,
+            "step_details": "CTT Elevator Calibration Page",
+            "step_type": "Validation Step",
+            "step_order": 1
+          },
+          {
+            "step_order_id": 3126,
+            "step_excludes": 0,
+            "report_type": 3,
+            "step_id": 586,
+            "step_completes": 0,
+            "step_data_available": 0,
+            "step_final_user_count": 0,
+            "primary_step": false,
+            "step_details": "http://www.google.com",
+            "step_type": "External Step",
+            "step_order": 2
+          },
+          {
+            "step_order_id": 3143,
+            "step_excludes": 0,
+            "report_type": 3,
+            "step_id": 554,
+            "step_completes": 0,
+            "step_data_available": 0,
+            "step_final_user_count": 0,
+            "primary_step": false,
+            "step_details": "Dec18 JS ViewPoints - Pre-exposure Bill / Statement",
+            "step_type": "Instruction Step",
+            "step_order": 3
+          }
+        ],
+        "cell_name": "hasnasdasd"
+      }
+    ],
+    "completed": false,
+    "allow_step_editing": true
+  },
+  "status": 200,
+  "statusText": "OK",
+  "headers": {
+    "content-language": "en",
+    "content-type": "application/json"
+  },
+  "config": {
+    "transformRequest": {},
+    "transformResponse": {},
+    "timeout": 0,
+    "xsrfCookieName": "XSRF-TOKEN",
+    "xsrfHeaderName": "X-XSRF-TOKEN",
+    "maxContentLength": -1,
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "authorization": "token 9d9f893c9213f5f9019bb15005752114e2ce6d22"
+    },
+    "method": "post",
+    "url": "https://api.lumen-research.com/v1.0/studies/138/steps/overview"
+  },
+  "request": {}
+}

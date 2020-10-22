@@ -1,0 +1,63 @@
+[{
+    "cell_id": 21,
+    "stimulus_list": [{
+      "stimulus_width": 1920,
+      "stimulus_name": "verification (7 boxes)",
+      "feature_tag_count": 7,
+      "stimulus_source": "https://s3.eu-west-2.amazonaws.com/ctt-media/verification_clean.png",
+      "stimulus_id": 7,
+      "step_id": 12,
+      "stimulus_low_quality_source": "https://s3.eu-west-2.amazonaws.com/ctt-media/resized/verification_clean-resized.png",
+      "stimulus_height": 1080,
+      "step_order": 3,
+      "stimulus_type": "i",
+      "feature_count": 7,
+      "stim_tag_count": 0
+    }, {
+      "stimulus_width": 2236,
+      "stimulus_name": "BT Unlimited 2017-07-27",
+      "feature_tag_count": 16,
+      "stimulus_source": "https://s3.eu-west-2.amazonaws.com/ctt-media/BTUnlimitedA_2017-07-27.jpg",
+      "stimulus_id": 23,
+      "step_id": 42,
+      "stimulus_low_quality_source": "https://s3.eu-west-2.amazonaws.com/ctt-media/resized/BTUnlimitedA_2017-07-27-resized.jpg",
+      "stimulus_height": 1482,
+      "step_order": 7,
+      "stimulus_type": "i",
+      "feature_count": 16,
+      "stim_tag_count": 0
+    }],
+    "cell_name": "Research-Now-Study2-Cell-A"
+  },
+  {
+    "cell_id": 22,
+    "stimulus_list": [{
+      "stimulus_width": 1920,
+      "stimulus_name": "verification (7 boxes) alt",
+      "feature_tag_count": 7,
+      "stimulus_source": "https://s3.eu-west-2.amazonaws.com/ctt-media/verification_clean.png",
+      "stimulus_id": 7,
+      "step_id": 18,
+      "stimulus_low_quality_source": "https://s3.eu-west-2.amazonaws.com/ctt-media/resized/verification_clean-resized.png",
+      "stimulus_height": 1080,
+      "step_order": 3,
+      "stimulus_type": "i",
+      "feature_count": 7,
+      "stim_tag_count": 0
+    }, {
+      "stimulus_width": 3345,
+      "stimulus_name": "BT Discount 2017-07-27",
+      "feature_tag_count": 14,
+      "stimulus_source": "https://s3.eu-west-2.amazonaws.com/ctt-media/BTDiscountA_2017-07-27.jpg",
+      "stimulus_id": 22,
+      "step_id": 43,
+      "stimulus_low_quality_source": "https://s3.eu-west-2.amazonaws.com/ctt-media/resized/BTDiscountA_2017-07-27-resized.jpg",
+      "stimulus_height": 2160,
+      "step_order": 7,
+      "stimulus_type": "i",
+      "feature_count": 14,
+      "stim_tag_count": 0
+    }],
+    "cell_name": "Research-Now-Study2-Cell-B"
+  }
+]

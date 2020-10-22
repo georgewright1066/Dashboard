@@ -1,0 +1,16 @@
+@include breakpoint(midDisplay) {
+  .show-study {
+
+    &__mini-card-container {
+      flex-direction: row;
+      margin-top: 10px;
+    }
+  }
+
+  .study-details {
+    &__name-container {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}

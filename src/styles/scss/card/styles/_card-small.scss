@@ -1,0 +1,33 @@
+.card {
+  background-color: #00BADB;
+  margin-right: 10px;
+  @include BoxShadowHelper(1);
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+  }
+  &__title {
+    font-size: 16px;
+    @include breakpoint(midDisplay) {
+      padding-right: 20px;
+    }
+  }
+  &__number {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      height: 100%;
+      width: 2px;
+      position: absolute;
+      background: $primary-light;
+      left: -10px;
+    }
+  }
+}

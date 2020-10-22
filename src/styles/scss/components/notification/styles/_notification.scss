@@ -1,0 +1,26 @@
+.notification {
+  @include white-border;
+  position: fixed;
+  padding:0 5px 5px 5px;
+  z-index: 5;
+  transition: transform 0.3s ease-in-out;
+  top: -100%;
+  color: $color-white;
+  margin: 0;
+  transform: translateY(-100%);
+  right: 0px;
+  top: 50px;
+
+  &.active {
+    transform: translateY(0);
+
+  }
+
+  &__container {
+    background: #45c73b;
+    padding: 20px;
+    border-top-left-radius:0;
+    border-top-right-radius:0;
+
+  }
+}

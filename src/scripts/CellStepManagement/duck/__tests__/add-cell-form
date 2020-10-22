@@ -1,0 +1,96 @@
+
+
+import React from 'react';
+import { shallow, mount, render, configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import configureStore from 'redux-mock-store';
+const middlewares = [thunk];
+const mockStore = configureStore(middlewares);
+import thunk from 'redux-thunk';
+import Form from '../../../Modal/components/AddStepModal';
+import PrettyDropdown from '../../../common/components/PrettyDropdown';
+import External from '../../components/External';
+import CachePage from '../../components/CachePage';
+import Provider from 'redux';
+
+configure({ adapter: new Adapter() });
+it('renders all parts', () => {
+  const x = Array(9).fill({ instruction_name: 'hello', step_id: 3 });
+  const option = [{ instruction_name: 'Instruction', step_id: 2 }, { instruction_name: 'Cache Page', step_id: 3 }];
+
+  const store = mockStore({
+    cellStepManagement: {
+      modalOpen: true, active: true,
+      initialDropDown: option.map(x => x.instruction_name),
+      dropDownOptions: option.map(x => x.instruction_name),
+    }
+  });
+  const wrapper = mount(<Form store={store} />);
+  wrapper.setState({ stepType: 'Cache Page' });
+
+  expect(wrapper.find(PrettyDropdown).exists()).toBe(true);
+
+});
+
+// it('If Step Type is External  and type is Text Render External Component', () => {
+//   const x = Array(9).fill({ instruction_name: 'hello', step_id: 3 });
+//   const option = [{ instruction_name: 'Instruction', step_id: 2 }, { instruction_name: 'Cache Page', step_id: 3 }];
+//   const onChange = jest.fn();
+//   const onParamChange = jest.fn();
+
+//   const store = mockStore({
+//     cellStepManagement: {
+//       modalOpen: true, active: true,
+//       initialDropDown: option.map(x => x.instruction_name),
+//       dropDownOptions: option.map(x => x.instruction_name),
+//     }
+//   });
+//   const wrapper = mount(<Form store={store} />);
+//   wrapper.setState({ stepType: 'External' });
+//   expect(wrapper.find(External).exists()).toBe(true);
+
+// });
+
+
+// it('If Step Type is Embedded  and type is Text Render External Component', () => {
+//   const x = Array(9).fill({ instruction_name: 'hello', step_id: 3 });
+//   const option = [{ instruction_name: 'hello', step_id: 3 }, { instruction_name: 'hello', step_id: 3 }];
+//   const onChange = jest.fn();
+//   const onParamChange = jest.fn();
+
+//   const store = mockStore({
+//     cellStepManagement: {
+//       modalOpen: true, active: true,
+//       initialDropDown: option.map(x => x.instruction_name),
+//       dropDownOptions: option.map(x => x.instruction_name),
+//     }
+//   });
+
+//   const wrapper = mount(<Form store={store} />);
+//   console.log(wrapper);
+//   wrapper.setState({ stepType: 'Embedded' });
+
+//   expect(wrapper.find(External).exists()).toBe(true);
+
+// });
+
+
+// it('If Step Type is Embedded  and type is Text Render External Component', () => {
+//   const option = [{ instruction_name: 'hello', step_id: 3 }, { instruction_name: 'hello', step_id: 3 }];
+
+//   const store = mockStore({
+//     cellStepManagement: {
+//       modalOpen: true, active: true,
+//       initialDropDown: option.map(x => x.instruction_name),
+//       dropDownOptions: option.map(x => x.instruction_name),
+//     }
+//   });
+
+//   const wrapper = mount(<Form store={store} />);
+//   wrapper.setState({ stepType: 'Cache Page' });
+
+//   expect(wrapper.find(CachePage).exists()).toBe(true);
+
+// });
+
+

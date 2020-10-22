@@ -1,0 +1,87 @@
+{
+  "study_id": 227,
+  "live_links": {
+    "standard": "https://study.viewpoints.fyi/start?access_code=a8ebbf1a-e994-4a17-879c-b3b0b6a2c342&study_id=227&participant=Insert_Id",
+    "cell_links": [
+      {
+        "standard": "https://study.viewpoints.fyi/start?access_code=a8ebbf1a-e994-4a17-879c-b3b0b6a2c342&study_id=227&cell_id=579&participant=Insert_Id",
+        "cell_id": 579,
+        "auto_start": "https://study.viewpoints.fyi/auto-start?access_code=a8ebbf1a-e994-4a17-879c-b3b0b6a2c342&study_id=227&cell_id=579",
+        "short_name": "A",
+        "cell_name": "cell_1-GVMRBlueBandStudy2"
+      },
+      {
+        "standard": "https://study.viewpoints.fyi/start?access_code=a8ebbf1a-e994-4a17-879c-b3b0b6a2c342&study_id=227&cell_id=580&participant=Insert_Id",
+        "cell_id": 580,
+        "auto_start": "https://study.viewpoints.fyi/auto-start?access_code=a8ebbf1a-e994-4a17-879c-b3b0b6a2c342&study_id=227&cell_id=580",
+        "short_name": "B",
+        "cell_name": "cell_2-GVMRBlueBandStudy2"
+      }
+    ],
+    "auto_start": "https://study.viewpoints.fyi/auto-start?access_code=a8ebbf1a-e994-4a17-879c-b3b0b6a2c342&study_id=227",
+    "panel_links": [
+      {
+        "cell_links": [
+          {
+            "panel_id": 161,
+            "panel_code": "code",
+            "panel_name": "Panel Company",
+            "standard": "https://study.viewpoints.fyi/start?access_code=a8ebbf1a-e994-4a17-879c-b3b0b6a2c342&study_id=227&cell_id=579&panel=code&participant=Insert_Id"
+          },
+          {
+            "panel_id": 161,
+            "panel_code": "code",
+            "panel_name": "Panel Company",
+            "standard": "https://study.viewpoints.fyi/start?access_code=a8ebbf1a-e994-4a17-879c-b3b0b6a2c342&study_id=227&cell_id=580&panel=code&participant=Insert_Id"
+          }
+        ],
+        "panel_id": 161,
+        "panel_code": "code",
+        "panel_name": "Panel Company",
+        "standard": "https://study.viewpoints.fyi/start?access_code=a8ebbf1a-e994-4a17-879c-b3b0b6a2c342&study_id=227&panel=code&participant=Insert_Id"
+      }
+    ]
+  },
+  "testing_links": {
+    "panel_links": [
+      {
+        "cell_links": [
+          {
+            "panel_id": 161,
+            "panel_code": "code",
+            "panel_name": "Panel Company",
+            "standard": "https://study.viewpoints.fyi/start?test=1&access_code=a8ebbf1a-e994-4a17-879c-b3b0b6a2c342&study_id=227&cell_id=579&panel=code&participant=Insert_Id"
+          },
+          {
+            "panel_id": 161,
+            "panel_code": "code",
+            "panel_name": "Panel Company",
+            "standard": "https://study.viewpoints.fyi/start?test=1&access_code=a8ebbf1a-e994-4a17-879c-b3b0b6a2c342&study_id=227&cell_id=580&panel=code&participant=Insert_Id"
+          }
+        ],
+        "panel_id": 161,
+        "panel_code": "code",
+        "panel_name": "Panel Company",
+        "standard": "https://study.viewpoints.fyi/start?test=1&access_code=a8ebbf1a-e994-4a17-879c-b3b0b6a2c342&study_id=227&panel=code&participant=Insert_Id"
+      }
+    ],
+    "cell_links": [
+      {
+        "standard": "https://study.viewpoints.fyi/start?test=1&access_code=a8ebbf1a-e994-4a17-879c-b3b0b6a2c342&study_id=227&cell_id=579&participant=Insert_Test_Id",
+        "cell_id": 579,
+        "auto_start": "https://study.viewpoints.fyi/auto-start?test=1&access_code=a8ebbf1a-e994-4a17-879c-b3b0b6a2c342&study_id=227&cell_id=579",
+        "short_name": "A",
+        "cell_name": "cell_1-GVMRBlueBandStudy2"
+      },
+      {
+        "standard": "https://study.viewpoints.fyi/start?test=1&access_code=a8ebbf1a-e994-4a17-879c-b3b0b6a2c342&study_id=227&cell_id=580&participant=Insert_Test_Id",
+        "cell_id": 580,
+        "auto_start": "https://study.viewpoints.fyi/auto-start?test=1&access_code=a8ebbf1a-e994-4a17-879c-b3b0b6a2c342&study_id=227&cell_id=580",
+        "short_name": "B",
+        "cell_name": "cell_2-GVMRBlueBandStudy2"
+      }
+    ],
+    "auto_start": "https://study.viewpoints.fyi/auto-start?test=1&access_code=a8ebbf1a-e994-4a17-879c-b3b0b6a2c342&study_id=227&test=1",
+    "standard": "https://study.viewpoints.fyi/start?test=1&access_code=a8ebbf1a-e994-4a17-879c-b3b0b6a2c342&study_id=227&participant=Insert_Test_Id"
+  }
+}

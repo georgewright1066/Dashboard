@@ -1,0 +1,19 @@
+.cachepage-modal {
+  display: none;
+  &.active {
+    display: block;
+    background: $primary-color;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 100;
+    height: 100%;
+    top: 0;
+    border-radius: 8px;
+  }
+
+  .edit-audience {
+    margin: auto;
+    margin-top: 60px;
+  }
+}

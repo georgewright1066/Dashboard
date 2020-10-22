@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import './libs/default/normalize';
+@import './libs/default/variables';
+@import './generic/variables';
+@import './generic/breakpoints';
+@import './generic/mixins';
+@import './generic/core';
+@import './generic/button';
+@import './generic/shared';
+@import './containers/home/styles/home';
+@import './containers/aside/styles/aside';
+@import './containers/dashboard/styles/dashboard';
+@import './containers/login/styles/login';
+@import './containers/mydetails/styles/mydetails';
+@import './containers/404/styles/404';
+@import './containers/csm/styles/csm';
+@import './containers/filter/styles/filter';
+@import './containers/overview/styles/overview';
+@import './containers/footer/styles/footer';
+@import './containers/kpi/styles/kpi';
+@import './containers/batch/styles/batch';
+@import './containers/feature-analysis/styles/feature-analysis';
+@import './containers/edit-audience/styles/edit-audience';
+@import './containers/attentionReport/styles/attention-report';
+@import './containers/model/styles/model';
+@import './containers/survey/styles/survey';
+@import './containers/demographics/styles/demographics';
+@import './containers/cell-step-management/styles/cell-step';
+@import './containers/studies/styles/studies';
+@import './containers/links/styles/links';
+@import './components/card/styles/card';
+@import './components/table/styles/table';
+@import './components/error/styles/error';
+@import './components/dropdown/styles/dropdown';
+@import './components/tooltip/styles/tooltip';
+@import './components/pretty-dropdown/styles/pretty-dropdown';
+@import './components/cache-page-modal/styles/cache-page-modal';
+@import './components/breadcrumbs/styles/breadcrumbs';
+@import './components/study-details/styles/study-details';
+@import './components/spinner/styles/spinner';
+@import './components/study-table/styles/study-table';
+@import './components/details-card/styles/details-card';
+@import './components/video/styles/video';
+@import './components/bar-chart/styles/bar-chart';
+@import './components/visuals/styles/visuals';
+@import './components/checkbox/styles/checkbox';
+@import './components/mini-card/styles/mini-card';
+@import './components/widget/styles/widget';
+@import './components/status/styles/status';
+@import './components/files/styles/files';
+
+@import './components/add-new-study/styles/add-new-study';
+@import './components/notification/styles/notification';
+@import './components/stims/styles/stims';
+@import './components/aoi/styles/aoi';
+
+
+
+body {
+  background: #fff;
+  display: flex;
+  font-family: $font-family;
+  flex-direction: column;
+  color: #000;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+}
+
+a {
+  color: $color-black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+}
+
+.app-container {
+  width: 100%;
+  margin-top: 60px;
+}
+
+main {
+  margin-left: 54px;
+  min-height: 81vh;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #dddddd;
+  font-size: 16px;
+  font-weight: bold;
+  background: $color-white;
+  padding: 6px
+}
+
+a {
+  color: $color-black;
+}
+
+li {
+  padding: 3px 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 3px 20px;
+  background: white;
+}
+
+.Tooltip {
+  border: 1px solid #757575;
+  box-shadow: none;
+  display: table;
+  position: absolute;
+  padding: 8px;
+  text-align: left;
+  font-size: 12px;
+  background: #f5f5f5;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.Chart {
+  position: relative;
+
+}
+
+.hidden {
+  display:none;
+}
+

@@ -1,0 +1,72 @@
+.widget {
+  justify-content: space-evenly;
+  position: relative;
+  flex: 1 1;
+  border: 2px solid #bfbfbf;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+
+  .info-tooltip {
+    top: 5px;
+    right: 5px;
+  }
+
+  &__container {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__text-container {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  &__item-button-bottom {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  &__item-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    padding: 10px 0;
+
+    &.with-button {
+      padding: 0px;
+
+      span {
+        flex: 1;
+      }
+
+      button {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__header-container {
+    background: #00BADB;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  &__button {
+    margin: 0px;
+    padding: 0px 6px;
+
+    &.home {
+      min-width: 150px;
+    }
+  }
+}

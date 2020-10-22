@@ -1,0 +1,18 @@
+.add-new-study {
+  color: $color-black;
+  text-align: center;
+  &.csm-modal-form{
+    &.active {
+      flex-direction: column;
+    }
+  }
+
+  .pretty-dropdown {
+    color: $color-black;
+  }
+  &__input {
+    width: 70%;
+    margin: 30px auto;
+    max-width: 500px;
+  }
+}

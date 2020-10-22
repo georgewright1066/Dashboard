@@ -1,0 +1,34 @@
+@include breakpoint(midDisplay) {
+  .table--collapse {
+    display: flex;
+  }
+  /* Table column sizing
+  ================================== */
+  .table--2cols>.table-cell {
+    width: 50%;
+  }
+  .table--3cols>.table-cell {
+    width: 33.33%;
+  }
+  .table--4cols>.table-cell {
+    width: 25%;
+  }
+  .table--5cols>.table-cell {
+    width: 20%;
+  }
+  .table--6cols>.table-cell {
+    width: 16.6%;
+  }
+  .table--7cols>.table-cell {
+    width: 14.2%;
+  }
+  .table--8cols>.table-cell {
+    width: 12.5%;
+  }
+  .table--9cols>.table-cell {
+    width: 11.1%;
+  }
+  .table--10cols>.table-cell {
+    width: 10.0%;
+  }
+}

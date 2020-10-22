@@ -1,0 +1,70 @@
+.filter {
+  position: relative;
+
+  &__exit-button {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    z-index: 20;
+    display: block;
+
+    .visual-aid {
+      opacity: 1;
+    }
+
+    &::after,
+    &::before {
+      content: '';
+      margin: 5px 0;
+    }
+
+    .visual-aid,
+    &::after,
+    &::before {
+      width: 30px;
+      height: 3px;
+      display: block;
+      background: #000000;
+    }
+
+    &::after {
+      transform: rotate(-45deg) translate3d(0, 0, 0);
+    }
+
+    &::before {
+      transform: rotate(45deg) translate3d(6px, 5.5px, 0);
+    }
+
+    .accessible-text {
+      @include visually-hidden;
+    }
+
+  }
+
+  .filter-active & {
+    display: block;
+  }
+
+  &__table {
+    @include white-border;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  &__group-item-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+
+    label {
+      margin-right: 4px;
+    }
+  }
+}

@@ -1,0 +1,380 @@
+{
+  "cell_count": 15,
+  "study_name": "Test Step Management",
+  "study_id": 138,
+  "live": true,
+  "data": [
+    {
+      "263": {
+        "id": 263,
+        "taskIds": [
+          {
+            "seconds_before_show_next": 5,
+            "step_order_id": 3155,
+            "step_excludes": 0,
+            "report_type": 3,
+            "step_completes": 0,
+            "step_id": 5,
+            "step_data_available": 0,
+            "seconds_before_move_next": 0,
+            "step_final_user_count": 0,
+            "primary_step": false,
+            "step_details": "CTT Start Page",
+            "step_type": "Instruction Step",
+            "step_order": 0
+          },
+          {
+            "seconds_before_show_next": 5,
+            "step_order_id": 3157,
+            "step_excludes": 0,
+            "report_type": 3,
+            "step_completes": 0,
+            "step_id": 592,
+            "step_data_available": 0,
+            "seconds_before_move_next": 0,
+            "step_final_user_count": 0,
+            "primary_step": false,
+            "step_details": "http://www.example.com",
+            "step_type": "External Step",
+            "step_order": 1
+          }
+        ],
+        "cellName": "cell_1-TestStepManagement",
+        "shortName": "A"
+      },
+      "cell_id": 263,
+      "step_data": [
+        {
+          "seconds_before_show_next": 5,
+          "step_order_id": 3155,
+          "step_excludes": 0,
+          "report_type": 3,
+          "step_completes": 0,
+          "step_id": 5,
+          "step_data_available": 0,
+          "seconds_before_move_next": 0,
+          "step_final_user_count": 0,
+          "primary_step": false,
+          "step_details": "CTT Start Page",
+          "step_type": "Instruction Step",
+          "step_order": 0
+        },
+        {
+          "seconds_before_show_next": 5,
+          "step_order_id": 3157,
+          "step_excludes": 0,
+          "report_type": 3,
+          "step_completes": 0,
+          "step_id": 592,
+          "step_data_available": 0,
+          "seconds_before_move_next": 0,
+          "step_final_user_count": 0,
+          "primary_step": false,
+          "step_details": "http://www.example.com",
+          "step_type": "External Step",
+          "step_order": 1
+        }
+      ],
+      "short_name": "A",
+      "cell_name": "cell_1-TestStepManagement"
+    },
+    {
+      "264": {
+        "id": 264,
+        "taskIds": [
+          {
+            "seconds_before_show_next": 5,
+            "step_order_id": 3241,
+            "step_excludes": 0,
+            "report_type": 3,
+            "step_completes": 0,
+            "step_id": 204,
+            "step_data_available": 0,
+            "seconds_before_move_next": 0,
+            "step_final_user_count": 0,
+            "primary_step": false,
+            "step_details": "Web Viewpoints introduce next button",
+            "step_type": "Instruction Step",
+            "step_order": 0
+          },
+          {
+            "seconds_before_show_next": 5,
+            "step_order_id": 3110,
+            "step_excludes": 0,
+            "report_type": 3,
+            "step_completes": 0,
+            "step_id": 580,
+            "step_data_available": 0,
+            "seconds_before_move_next": 0,
+            "step_final_user_count": 0,
+            "primary_step": false,
+            "step_details": "http://www.example.com",
+            "step_type": "External Step",
+            "step_order": 1
+          },
+          {
+            "seconds_before_show_next": 5,
+            "step_order_id": 3242,
+            "step_excludes": 0,
+            "report_type": 3,
+            "step_completes": 0,
+            "step_id": 205,
+            "step_data_available": 0,
+            "seconds_before_move_next": 0,
+            "step_final_user_count": 0,
+            "primary_step": false,
+            "step_details": "Web Viewpoints Pre Exposure Social Page",
+            "step_type": "Instruction Step",
+            "step_order": 2
+          },
+          {
+            "seconds_before_show_next": 5,
+            "step_order_id": 3161,
+            "step_excludes": 0,
+            "report_type": 3,
+            "step_completes": 0,
+            "step_id": 32,
+            "step_data_available": 0,
+            "seconds_before_move_next": 0,
+            "step_final_user_count": 0,
+            "primary_step": false,
+            "step_details": "CTT Elevator Calibration Page",
+            "step_type": "Validation Step",
+            "step_order": 3
+          }
+        ],
+        "cellName": "cell_2-TestStepManagement",
+        "shortName": "B"
+      },
+      "cell_id": 264,
+      "step_data": [
+        {
+          "seconds_before_show_next": 5,
+          "step_order_id": 3241,
+          "step_excludes": 0,
+          "report_type": 3,
+          "step_completes": 0,
+          "step_id": 204,
+          "step_data_available": 0,
+          "seconds_before_move_next": 0,
+          "step_final_user_count": 0,
+          "primary_step": false,
+          "step_details": "Web Viewpoints introduce next button",
+          "step_type": "Instruction Step",
+          "step_order": 0
+        },
+        {
+          "seconds_before_show_next": 5,
+          "step_order_id": 3110,
+          "step_excludes": 0,
+          "report_type": 3,
+          "step_completes": 0,
+          "step_id": 580,
+          "step_data_available": 0,
+          "seconds_before_move_next": 0,
+          "step_final_user_count": 0,
+          "primary_step": false,
+          "step_details": "http://www.example.com",
+          "step_type": "External Step",
+          "step_order": 1
+        },
+        {
+          "seconds_before_show_next": 5,
+          "step_order_id": 3242,
+          "step_excludes": 0,
+          "report_type": 3,
+          "step_completes": 0,
+          "step_id": 205,
+          "step_data_available": 0,
+          "seconds_before_move_next": 0,
+          "step_final_user_count": 0,
+          "primary_step": false,
+          "step_details": "Web Viewpoints Pre Exposure Social Page",
+          "step_type": "Instruction Step",
+          "step_order": 2
+        },
+        {
+          "seconds_before_show_next": 5,
+          "step_order_id": 3161,
+          "step_excludes": 0,
+          "report_type": 3,
+          "step_completes": 0,
+          "step_id": 32,
+          "step_data_available": 0,
+          "seconds_before_move_next": 0,
+          "step_final_user_count": 0,
+          "primary_step": false,
+          "step_details": "CTT Elevator Calibration Page",
+          "step_type": "Validation Step",
+          "step_order": 3
+        }
+      ],
+      "short_name": "B",
+      "cell_name": "cell_2-TestStepManagement"
+    },
+    {
+      "389": {
+        "id": 389,
+        "taskIds": [
+          {
+            "seconds_before_show_next": 4,
+            "step_order_id": 3185,
+            "step_excludes": 0,
+            "report_type": 3,
+            "step_completes": 0,
+            "step_id": 554,
+            "step_data_available": 0,
+            "seconds_before_move_next": 2,
+            "step_final_user_count": 0,
+            "primary_step": false,
+            "step_details": "Dec18 JS ViewPoints - Pre-exposure Bill / Statement",
+            "step_type": "Instruction Step",
+            "step_order": 1
+          },
+          {
+            "seconds_before_show_next": 5,
+            "step_order_id": 3191,
+            "step_excludes": 0,
+            "report_type": 3,
+            "step_completes": 0,
+            "step_id": 554,
+            "step_data_available": 0,
+            "seconds_before_move_next": 0,
+            "step_final_user_count": 0,
+            "primary_step": false,
+            "step_details": "Dec18 JS ViewPoints - Pre-exposure Bill / Statement",
+            "step_type": "Instruction Step",
+            "step_order": 2
+          }
+        ],
+        "cellName": "MArcus",
+        "shortName": "hello"
+      },
+      "cell_id": 389,
+      "step_data": [
+        {
+          "seconds_before_show_next": 4,
+          "step_order_id": 3185,
+          "step_excludes": 0,
+          "report_type": 3,
+          "step_completes": 0,
+          "step_id": 554,
+          "step_data_available": 0,
+          "seconds_before_move_next": 2,
+          "step_final_user_count": 0,
+          "primary_step": false,
+          "step_details": "Dec18 JS ViewPoints - Pre-exposure Bill / Statement",
+          "step_type": "Instruction Step",
+          "step_order": 1
+        },
+        {
+          "seconds_before_show_next": 5,
+          "step_order_id": 3191,
+          "step_excludes": 0,
+          "report_type": 3,
+          "step_completes": 0,
+          "step_id": 554,
+          "step_data_available": 0,
+          "seconds_before_move_next": 0,
+          "step_final_user_count": 0,
+          "primary_step": false,
+          "step_details": "Dec18 JS ViewPoints - Pre-exposure Bill / Statement",
+          "step_type": "Instruction Step",
+          "step_order": 2
+        }
+      ],
+      "short_name": "hello",
+      "cell_name": "MArcus"
+    },
+    {
+      "399": {
+        "id": 399,
+        "taskIds": [
+          {
+            "seconds_before_show_next": 1241,
+            "step_order_id": 3248,
+            "step_excludes": 0,
+            "report_type": 3,
+            "step_completes": 0,
+            "step_id": 157,
+            "step_data_available": 0,
+            "seconds_before_move_next": 1231,
+            "step_final_user_count": 0,
+            "primary_step": false,
+            "step_details": "Web Viewpoints - Elevator Calibration Instruction Page",
+            "step_type": "Instruction Step",
+            "step_order": 0
+          }
+        ],
+        "cellName": "A New Cell",
+        "shortName": "sdasd"
+      },
+      "cell_id": 399,
+      "step_data": [
+        {
+          "seconds_before_show_next": 1241,
+          "step_order_id": 3248,
+          "step_excludes": 0,
+          "report_type": 3,
+          "step_completes": 0,
+          "step_id": 157,
+          "step_data_available": 0,
+          "seconds_before_move_next": 1231,
+          "step_final_user_count": 0,
+          "primary_step": false,
+          "step_details": "Web Viewpoints - Elevator Calibration Instruction Page",
+          "step_type": "Instruction Step",
+          "step_order": 0
+        }
+      ],
+      "short_name": "sdasd",
+      "cell_name": "A New Cell"
+    },
+    {
+      "410": {
+        "id": 410,
+        "taskIds": [
+          {
+            "seconds_before_show_next": 555,
+            "step_order_id": 3286,
+            "step_excludes": 0,
+            "report_type": 3,
+            "step_completes": 0,
+            "step_id": 514,
+            "step_data_available": 0,
+            "seconds_before_move_next": 5555,
+            "step_final_user_count": 0,
+            "primary_step": false,
+            "step_details": "Oct18 JS ViewPoints - Pre-exposure Website Instructions",
+            "step_type": "Instruction Step",
+            "step_order": 0
+          }
+        ],
+        "cellName": "adasd",
+        "shortName": "New Name"
+      },
+      "cell_id": 410,
+      "step_data": [
+        {
+          "seconds_before_show_next": 555,
+          "step_order_id": 3286,
+          "step_excludes": 0,
+          "report_type": 3,
+          "step_completes": 0,
+          "step_id": 514,
+          "step_data_available": 0,
+          "seconds_before_move_next": 5555,
+          "step_final_user_count": 0,
+          "primary_step": false,
+          "step_details": "Oct18 JS ViewPoints - Pre-exposure Website Instructions",
+          "step_type": "Instruction Step",
+          "step_order": 0
+        }
+      ],
+      "short_name": "New Name",
+      "cell_name": "adasd"
+    }
+  ],
+  "completed": false,
+  "allow_step_editing": true
+}

@@ -1,0 +1,17 @@
+.edit-audience {
+  display: flex;
+  justify-content: center;
+  &__label {
+    padding: 10px 0;
+  }
+  .pretty-dropdown__container {
+    padding: 0;
+  }
+
+  .pretty-dropdown {
+    &:after {
+      left: 0px;
+      right: auto;
+    }
+  }
+}
